@@ -11,3 +11,27 @@ Vagrant.configure("2") do |config|
     v.name = "Control-Node Ansible"
 end
 end
+
+
+
+# Checar se os hosts estão acessiveis:
+
+ansible -m ping all
+
+# Retorno Esperado
+
+[vagrant@control-node ~]$ ansible -m ping all
+app01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+db01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}

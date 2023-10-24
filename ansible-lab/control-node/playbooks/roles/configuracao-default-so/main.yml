@@ -1,0 +1,8 @@
+- name: Upgrade de Pacotes SO
+  yum: 
+    name: '*'
+      state: latest
+- name: Instalacao de Pacotes
+  yum:
+    name: git
+    state: latest
