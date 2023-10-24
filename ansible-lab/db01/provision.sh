@@ -1,0 +1,7 @@
+#/bin/sh
+
+cat << EOT >> /home/vagrant/.ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCX95uFmUKpsHn+udglXlY+if6driWvwNRn5hGzd5lkzE5wn0jEJXKRAC1rpbmd2Q3+8hb450sJR0diUP5GjKY3o5P8ASRQVf5L5eJ+KlZDIxw4XHfjm7ilyVxUXmbLhNM0PDouO6NyvPx0O5t2wQdCEwl9dRp6gngq1Q7asIXPyu60cHMMqJZ6u8GdRn4w+1t7Q0VViB9dKn43iDqB4e2qPNJcSDLtzkYrVjnZdEkYm8bTKZ8oYx2Goxw3V/liWYBrFXIpTnQz957RRsEJajeqh2oUwSr4VZTiEx3hzWJ0SyiInAS1g7KfvEFLN3IEbZ1q199YWSLXZ0syv88xPmSv vagrant@control-node
+EOT
+
+sudo yum install vim -y
