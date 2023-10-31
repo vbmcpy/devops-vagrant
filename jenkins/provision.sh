@@ -3,7 +3,8 @@
 yum install epel-release -y
 yum install wget git -y
 sudo wget --no-check-certificate -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+sudo systemctl enable jenkins
 yum install java-11-openjdk-devel -y
 yum install jenkins -y
 systemctl daemon-reload
